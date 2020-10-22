@@ -1,7 +1,7 @@
-print("Title of program: Post Exam Activity bot")
+print("Title of program: Friend bot")
 print()
 while True:
-  description = input("Could you describe how you feel after the examinations?")
+  description = input("Could you describe how you are feeling now?")
 
   list_of_words = description.split()
 
@@ -25,18 +25,30 @@ while True:
       counter += 1
     if each_word == "relieved":
       feelings_list.append("relieved")
-      encouragement_list.append("Relax after the stressful examinations")
+      encouragement_list.append("Finally you can relax")
+      counter += 1
+    if each_word == "excited":
+      feelings_list.append("excited")
+      encouragement_list.append("Good for you. Have fun")
       counter += 1
 
     if each_word == "dead tired":
       feelings_list.append("dead tired")
       encouragement_list.append("Just find something fun to do")
       counter += 1
-     if each_word == "sad":
+    if each_word == "sad":
       feelings_list.append("sad")
       encouragement_list.append("talk to your friends")
       counter += 1  
-      
+    if each_word == "depressed":
+      feelings_list.append("depressed")
+      encouragement_list.append("Go talk to your parents and best friends")
+      counter += 1 
+    if each_word == "angry":
+      feelings_list.append("angry")
+      encouragement_list.append("Chill and do what relaxes you")
+      counter += 1  
+   
     if counter == 0:
 
       output = "Sorry I don't really understand. Please use different words?"
